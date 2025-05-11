@@ -1,0 +1,84 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background-color: #800000;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+section.tourist-places {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.place-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.place-card h2 {
+    background-color: #800000;
+    color: white;
+    padding: 10px;
+}
+
+.place-card p {
+    padding: 10px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
